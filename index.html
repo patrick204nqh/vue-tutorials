@@ -9,24 +9,17 @@
   </head>
   <body>
     <div id="vue-app">
-      <h1>Looping through lists</h1>
-      <ul>
-        <li v-for="character in characters">{{character}}</li>
-      </ul>
-      <ul>
-        <li v-for="(dev, index) in developers">
-          {{ index + 1 }}.{{ dev.name }} - {{ dev.age }}
-        </li>
-      </ul>
-      <template v-for="(dev, index) in developers">
-        <h3>{{ index }} . {{ dev.name }}</h3>
-        <p>{{ dev.age }}</p>
-      </template>
-      <template v-for="dev in developers">
-        <div v-for="(val, key) in dev">
-          <p>{{ key }} - {{ val }}</p>
-        </div>
-      </template>
+      <!-- bag image -->
+      <div id="bag" v-bind:class="{burst: ended}"></div>
+      <!-- bag health -->
+      <div id="bag-health">
+        <div v-bind:style="{width: health + '%'}"></div>
+      </div>
+      <!-- game controls -->
+      <div id="controls">
+        <button v-on:click="punch" v-show="!ended">Punch</button>
+        <button v-on:click="restart">Restart</button>
+      </div>
     </div>
     <script src="app.js"></script>
   </body>
