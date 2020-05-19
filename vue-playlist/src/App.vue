@@ -1,27 +1,27 @@
 <template>
   <div>
-    <h1>{{ title }}</h1>
-    <devs></devs>
+    <app-header></app-header>
+    <app-ninjas></app-ninjas>
+    <app-footer></app-footer>
   </div>
 </template>
 
 <script>
-import Patrick from "./Patrick";
+import Header from "./components/Header.vue";
+import Footer from "./components/Footer.vue";
+import Patrick from "./components/Patrick.vue";
 
 export default {
-  component: {
-    devs: Patrick
+  components: {
+    "app-header": Header,
+    "app-footer": Footer,
+    "app-ninjas": Patrick
   },
   data() {
-    return {
-      title: "Patrick App"
-    };
+    return {};
   }
 };
 </script>
 
-<style scoped>
-h1 {
-  color: purple;
-}
+<style>
 </style>
