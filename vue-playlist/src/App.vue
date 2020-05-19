@@ -2,14 +2,20 @@
   <div>
     <h1>{{ title }}</h1>
     <p>{{ greeting() }}</p>
+    <devs></devs>
   </div>
 </template>
 
 <script>
+import Patrick from "./Patrick";
+
 export default {
+  component: {
+    devs: Patrick
+  },
   data() {
     return {
-      title: "Your first Vue file"
+      title: "Patrick App"
     };
   },
   methods: {
