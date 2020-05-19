@@ -1,7 +1,6 @@
 <template>
   <div>
     <h1>{{ title }}</h1>
-    <p>{{ greeting() }}</p>
     <devs></devs>
   </div>
 </template>
@@ -17,14 +16,12 @@ export default {
     return {
       title: "Patrick App"
     };
-  },
-  methods: {
-    greeting: function() {
-      return "Hello, Patrick";
-    }
   }
 };
 </script>
 
-<style>
+<style scoped>
+h1 {
+  color: purple;
+}
 </style>
