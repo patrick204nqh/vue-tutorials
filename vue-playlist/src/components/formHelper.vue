@@ -14,23 +14,25 @@
       <div id="useful-links">
         <ul>
           <li>
-            <a href="#">Link 1</a>
+            <a href="#">link 1</a>
           </li>
           <li>
-            <a href="#">Link 2</a>
+            <a href="#">link 2</a>
           </li>
           <li>
-            <a href="#">Link 3</a>
+            <a href="#">link 3</a>
           </li>
           <li>
-            <a href="#">Link 4</a>
+            <a href="#">link 4</a>
           </li>
         </ul>
       </div>
     </form>
   </div>
 </template>
+
 <script>
+// Imports
 export default {
   components: {},
   data() {
